@@ -25,7 +25,7 @@ function merge(arr1, arr2) {
 function mergeSort(arr) {
 	if (arr.length == 1) return arr;
 	const mid = Math.ceil(arr.length / 2);
-	return merge(mergeSort(arr.slice(0, mid)), mergeSort(arr.slice(-mid)));
+	return merge(mergeSort(arr.slice(0, mid)), mergeSort(arr.slice(mid)));
 }
 
 console.log(mergeSort([105, 79, 100, 110]));
